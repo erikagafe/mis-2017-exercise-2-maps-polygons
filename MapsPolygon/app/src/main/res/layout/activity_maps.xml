@@ -1,0 +1,47 @@
+<!--https://examples.javacodegeeks.com/android/core/google-maps/android-google-maps-v2-tutorial/-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.erikagafe.mapspolygon.MapsActivity" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:hint="Enter Text"
+            android:focusable="true"
+            android:textColorHighlight="#ff7eff15"
+            android:textColorHint="#d2d0d2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close Path"
+            android:id="@+id/button" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+
+</LinearLayout>
+
+</RelativeLayout>
